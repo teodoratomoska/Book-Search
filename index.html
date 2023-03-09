@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search for Books</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="search-books">
+      <div class="search-books__heading">
+        <h3>BOOKS</h3>
+      </div>
+          <!-- Search Bar -->
+          <div class="search-books__search-bar">
+            <input type="text" name="search" id="search" class="search-books__search-bar__input" placeholder="Search Title, Author or Genre...">
+            <button type="submit" name="search_button" class="search-books__search-bar__button" onclick="search()"><img src="icons8-search-24.png"></button>
+          </div>
+          <!-- Books -->
+          <div><ul class="book book-list__books" id="book-list__books"></ul></div> 
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

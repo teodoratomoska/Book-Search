@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:wght@200&family=Montserrat:wght@100&family=Reem+Kufi+Fun:wght@500&family=Rubik:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(11, 0, 68, 0.87);
+}
+
+.search-books {
+  margin: 0px 30px;
+}
+
+.search-books__heading {
+  font-family: 'Gloock', serif;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.979);
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.search-books__search-bar {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.search-books__search-bar__input {
+  width: 350px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.726);
+  background:  rgba(10, 0, 44, 0.507);
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.164);
+  margin-right: 15px;
+  font-family: 'Abel', sans-serif;
+}
+
+.search-books__search-bar__button {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  background:  rgba(10, 0, 44, 0.507);
+  outline: none;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.164);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(7, 0, 31, 0.507);
+}
+
+button:active {
+  background-color: rgba(7, 0, 31, 0.507);
+  box-shadow: 0 5px rgba(11, 0, 68, 0);
+  transform: translateY(4px);
+}
+
+.book-list__books {
+  background-color: rgba(10, 0, 44, 0.507);
+  margin: 0;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  list-style: none;
+  gap: 32px; 
+}
+
+.book-list__book {
+  padding-left: 1rem;
+  font-size: 15px;
+  font-family: 'Abel', sans-serif;
+  color: rgba(240, 248, 255, 0.219);
+  text-align: center;
+  padding: 0;
+}
+
+.book-list__book-title {
+  font-size: 17px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 3px ;
+  color: rgba(240, 248, 255, 0.582);
+}
+
+.book-list__book-genre {
+  color: rgba(220, 238, 245, 0.315);
+  font-size: 10px;
+}
+
+/*Media Query: Tablet or Smaller */
+@media screen and (max-width: 520px) {
+  h1 {
+    text-align: center;
+  }
+
+  .search-books__search-bar__button {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+  }
+
+  .search-books__search-bar__input {
+    width: 100%;
+  }
+
+  .book-list__books {
+    padding: 0;
+  }   
+}
